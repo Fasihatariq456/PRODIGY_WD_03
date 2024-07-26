@@ -1,0 +1,71 @@
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element{
+    border:3px solid black;
+    padding: 0; 
+    margin: 2px;
+    border-radius: 5%;
+    font-size: 60px; /* increased font size */
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03346E;
+    color: #E2E2B6;
+}
+
+.win {
+    background-color: #6EACDA;
+    animation: winAnimation 2s ease-in-out;
+}
+
+@keyframes winAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #6EACDA, #E2E2B6);
+    color: #03346E;
+}
+
+h1 {
+    text-align: center;
+}
+
+.info {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#reset{
+    margin-top: 5px;
+    font-size: 15px;
+    padding: 3px;
+    background-color: #6EACDA;
+    border-color: #6EACDA;
+    width: 100px;
+}
+
+.element:hover{
+  background-color: #6EACDA;
+}
